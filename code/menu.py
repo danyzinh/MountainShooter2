@@ -15,7 +15,7 @@ pygame.font.init()
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/MenuBg.png')  # Carrega a imagem na tela
+        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha() # Carrega a imagem na tela
         self.rect = self.surf.get_rect(left=0, top=0)  # Desenha um retângulo na tela
 
     def run(self, ):
